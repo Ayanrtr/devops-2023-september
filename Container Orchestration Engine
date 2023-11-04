@@ -1,0 +1,15 @@
+Production Systems -->
+1. auto-healing of containers
+2. auto-scaling of containers
+3. auto-load balancing of containers requests
+4. auto-deployment of containers ( to avoid Downtime)
+5. auto-scheduling/clustering of containers
+
+
+Container Orchestration Engine (COE)
+--> Kubernetes
+
+--> Docker Swarm, Apache mesos
+
+
+https://mohan08p.medium.com/simplified-kubernetes-architecture-3febe12480eb
