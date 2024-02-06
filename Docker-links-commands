@@ -10,6 +10,9 @@ sudo su -
 https://hub.docker.com/
 https://docs.docker.com/
 
+Docker Commands:
+https://docs.docker.com/engine/reference/commandline/docker/
+
 docker run:
 https://docs.docker.com/engine/reference/run/
 
@@ -203,3 +206,83 @@ docker volume ls
   192  docker login
   193  docker image push raushan8586/devops-september-2023:httpd1
 
+
+----------------------------------------------------------------------------------
+
+17th Jan 2024
+
+root@ip-172-31-38-64:~# history
+    1  uname -a
+    2  apt update -y
+    3  clear
+    4  docker version
+    5  apt install docker.io -y
+    6  clear
+    7  docker version
+    8  history
+    9  git version
+   10  docker version
+   11  clear
+   12  docker images
+   13  apt install apache2 -y
+   14  lsod -i -P -n | grep LISTEN
+   15  lsof -i -P -n | grep LISTEN
+   16  docker pull httpd
+   17  docker images
+   18  docker ps
+   19  docker inspect httpd
+   20  clear
+   21  dcoker images
+   22  clear
+   23  docker images
+   24  docker run -itd -p 82:80 httpd
+   25  docker ps
+   26  docker exec -it 221cc6440498 /bin/bash
+Navigate to /usr/local/apache2/htdocs in the container to fidn index.html
+
+
+18th Jan 2024
+root@ip-172-31-0-64:~# history
+sudo su -
+    1  apt update -y
+    2  apt install docker.io -y
+    3  docker run -itd -p 82:80 httpd
+    4  docker network ls
+    5  clear
+    6  docker-compose version
+    7  apt install docker-compose -y
+    8  vi docker-compose.yaml
+    9  docker ps
+   10  docker rm -f 47b2d18f5d96
+   11  docker ps
+   12  clear
+   13  ls -l
+   14  docker-compose up -d
+   15  docker ps
+   16  docker exec -it 7863766b4023 /bin/bash
+
+mysql container --> cd /var/lib/mysql --> mysql -u wordpress -p wordpress
+show databases;
+use <database>;
+show tables;
+select * from <table>;
+
+   17  exit
+   18  docker ps
+   19  docker-compose down
+   20  docker-compose up -d
+   21  docker volume la
+   22  docker volume ls
+   23  docker netowrk ls
+   24  docker network ls
+   25  ls -l
+   26  history
+
+ 29  docker images
+   30  docker image tag wordpress:latest raushan8586/devops-jan-2024:wordpress
+   31  docker image push raushan8586/devops-jan-2024:wordpress
+
+docker logs fd0ac55645a0
+   41  clear
+   42  docker ps
+   43  docker logs 95f620e1df7c
